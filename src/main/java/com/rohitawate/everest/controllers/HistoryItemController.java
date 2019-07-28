@@ -16,20 +16,21 @@
 
 package com.rohitawate.everest.controllers;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.time.LocalDateTime;
+import java.util.ResourceBundle;
+
 import com.rohitawate.everest.controllers.search.Searchable;
 import com.rohitawate.everest.logging.LoggingService;
 import com.rohitawate.everest.models.requests.HTTPConstants;
 import com.rohitawate.everest.state.ComposerState;
 import com.rohitawate.everest.state.FieldState;
+
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.Tooltip;
-
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.time.LocalDateTime;
-import java.util.ResourceBundle;
 
 public class HistoryItemController implements Initializable, Searchable<ComposerState> {
     @FXML
@@ -37,7 +38,7 @@ public class HistoryItemController implements Initializable, Searchable<Composer
     @FXML
     private Tooltip tooltip;
 
-    private static final String GETStyle = "-fx-text-fill: orangered";
+    private static final String GETStyle = "-fx-text-fill: darkturquoise";
     private static final String POSTStyle = "-fx-text-fill: cornflowerblue";
     private static final String PUTStyle = "-fx-text-fill: deeppink";
     private static final String PATCHStyle = "-fx-text-fill: teal";
